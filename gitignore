@@ -1,0 +1,47 @@
+# Visual Studio cache
+.vs/
+
+# Build output folders
+Debug/
+Release/
+x64/
+x86/
+ipch/
+
+# CMake / generated build folders
+out/
+build/
+CMakeFiles/
+CMakeCache.txt
+
+# Executables / libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Debug symbols / intermediate files
+*.pdb
+*.obj
+*.idb
+*.ilk
+*.tlog
+*.log
+*.tmp
+*.cache
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# User-specific Visual Studio files
+*.user
+*.suo
+*.userosscache
+*.vcxproj.user
+
+# Auto-generated files (optional)
+*.aps
+*.ncb
+*.ipdb
+*.iobj
