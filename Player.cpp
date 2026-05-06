@@ -120,10 +120,10 @@ void Player::StatusUpgrade(void) {
 			cout << "Starting the game!";
 			loop = false;
 
-			for (__int32 i = 0; i < _hp_potion; i++) {
+			for (unsigned __int32 i = 0; i < _hp_potion; i++) {
 				_inventory.AddItem(Item::MakeItem(HP_POTION));
 			}
-			for (__int32 i = 0; i < _mp_potion; i++) {
+			for (unsigned __int32 i = 0; i < _mp_potion; i++) {
 				_inventory.AddItem(Item::MakeItem(MP_POTION));
 			}
 			break;

@@ -26,14 +26,15 @@ public:
 	void AddItem(T* item) {
 		std::cout << "Adding item...\n";
 		if (_size == _capacity) {
+			size_t newCapacity = _capacity + 10;
 			std::cout << "-> Full!\n";
-			std::cout << "-> Inventory auto-expanded! (" << _capacity << " -> " << _capacity + 10 << ")\n";
-			_capacity += 10;
+			std::cout << "-> Inventory auto-expanded! (" << _capacity << " -> " << newCapacity << ")\n";
 
-			T** tmp = new T * [_capacity];
-			for (size_t i = 0; i < _size; i++) tmp[i] = _Items[i];
+			T** tmp = new T * [newCapacity];
+			for (size_t i = 0; i < _capacity; i++) tmp[i] = _Items[i];
 			delete[] _Items;
 			_Items = tmp;
+			_capacity = newCapacity;
 		}
 
 		_Items[_size++] = item;
